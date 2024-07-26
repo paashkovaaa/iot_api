@@ -41,3 +41,5 @@ class Device(BaseModel):
 def initialize_db():
     db.connect()
     db.create_tables([ApiUser, Location, Device])
+
+    db.close()
