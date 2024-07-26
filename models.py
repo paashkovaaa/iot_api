@@ -38,4 +38,6 @@ class Device(BaseModel):
     api_user_id = ForeignKeyField(ApiUser, backref="devices")
 
 
-db.create_tables([ApiUser, Location, Device])
+def initialize_db():
+    db.connect()
+    db.create_tables([ApiUser, Location, Device])
