@@ -39,7 +39,6 @@ Below are the available API endpoints for managing IoT devices, users, and locat
 
 - **Endpoint:** `GET /devices`
 - **Description:** Retrieves a list of all devices.
-- **Response:** JSON array of devices.
 
 #### Add a Device
 
@@ -58,8 +57,6 @@ Below are the available API endpoints for managing IoT devices, users, and locat
     }
     ```
 
-- **Response:** JSON object with the ID of the newly created device.
-
 #### Update a Device
 
 - **Endpoint:** `PUT /devices/{id}`
@@ -72,13 +69,10 @@ Below are the available API endpoints for managing IoT devices, users, and locat
     }
     ```
 
-- **Response:** JSON object with status message.
-
 #### Delete a Device
 
 - **Endpoint:** `DELETE /devices/{id}`
 - **Description:** Deletes a device by ID.
-- **Response:** JSON object with status message.
 
 ### User Endpoints
 
@@ -164,7 +158,7 @@ pytest tests/
 
 ## Note
 
-Ensure the environment variable `HOST` is set to `localhost` before running tests. You can configure this in the `.env` file or directly in your testing environment.
+Ensure the environment variable `HOST` is set to `localhost` before running tests. You can configure this in the `.env` file.
 
 ## Using Postman
 
