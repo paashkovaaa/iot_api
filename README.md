@@ -20,10 +20,11 @@ To run the project with Docker, follow these steps:
 
 3. **Create PostgreSQL Database and Environment File**
 
-    - Ensure PostgreSQL is set up. Create a `.env` file in the project directory with the following content:
+    - You need to create PostgreSQL database locally on your machine. 
+    - Create a `.env` file in the project directory with the following content:
 
       ```dotenv
-      POSTGRES_DB=iot
+      POSTGRES_DB=db_name
       POSTGRES_USER=yourusername
       POSTGRES_PASSWORD=yourpassword
       HOST=db
