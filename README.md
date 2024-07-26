@@ -18,25 +18,14 @@ To run the project with Docker, follow these steps:
     cd iot_api
     ```
 
-3. **Create PostgreSQL Database and Environment File**
-
-    - You need to create PostgreSQL database locally on your machine. 
-    - Create a `.env` file in the project directory with the following content:
-
-      ```dotenv
-      POSTGRES_DB=db_name
-      POSTGRES_USER=yourusername
-      POSTGRES_PASSWORD=yourpassword
-      HOST=db
-      ```
-
-4. **Build and Run the Docker Containers**
+3. **Build and Run the Docker Containers**
 
     ```bash
     docker-compose up --build
     ```
+   If you want you can change database name, user name and password in .env file.
 
-5. **Access the API Endpoints**
+4. **Access the API Endpoints**
 
     The API will be accessible via `http://localhost:8080/`.
 
